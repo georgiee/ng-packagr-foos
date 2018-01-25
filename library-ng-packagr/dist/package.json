@@ -1,0 +1,14 @@
+{
+  "name": "@scoped/some-name",
+  "version": "1.0.0",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/core": "^5.0.0",
+    "@angular/common": "^5.0.0"
+  },
+  "main": "bundles/scoped-some-name.umd.js",
+  "module": "esm5/scoped-some-name.js",
+  "es2015": "esm2015/scoped-some-name.js",
+  "typings": "scoped-some-name.d.ts",
+  "metadata": "scoped-some-name.metadata.json"
+}

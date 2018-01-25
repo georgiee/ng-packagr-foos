@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "file": "scoped-some-name.js",
+  "sources": [
+    "ng://@scoped/some-name/foo/foo.module.ts",
+    "ng://@scoped/some-name/foo/foo.component.ts",
+    "ng://@scoped/some-name/test.module.ts"
+  ],
+  "sourcesContent": [
+    "import { NgModule } from '@angular/core';\nimport { FooComponent } from './foo.component';\n\n@NgModule({\n  declarations: [ FooComponent ],\n  exports: [ FooComponent ]\n})\nexport class FooModule { }\n",
+    "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'foo',\n  template: `foo foo`\n})\n\nexport class FooComponent {\n\n}\n",
+    "import { NgModule, ModuleWithProviders } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\n@NgModule({\n})\nexport class TestModule {\n\n  public static forRoot(): ModuleWithProviders {\n\n    return {\n      ngModule: TestModule\n    };\n  }\n}\n"
+  ],
+  "names": [],
+  "mappings": ";;;;;;AEAA,AAKA,MAAA,UAAA,CAAA;;;;IAES,OAAO,OAAO,GAAvB;QAEI,OAAO;YACL,QAAQ,EAAE,UAAU;SACrB,CAAC;;;;IARN,EAAA,IAAA,EAAC,QAAQ,EAAT,IAAA,EAAA,CAAU,EACT,EADD,EAAA;;;;;;;;;ADHA,AAOA,MAAA,YAAA,CAAA;;;IALA,EAAA,IAAA,EAAC,SAAS,EAAV,IAAA,EAAA,CAAW;gBACT,QAAQ,EAAE,KAAK;gBACf,QAAQ,EAAE,CAAZ,OAAA,CAAqB;aACpB,EAAD,EAAA;;;;;;;;;ADLA,AAOA,MAAA,SAAA,CAAA;;;IAJA,EAAA,IAAA,EAAC,QAAQ,EAAT,IAAA,EAAA,CAAU;gBACR,YAAY,EAAE,CAAE,YAAY,CAAE;gBAC9B,OAAO,EAAE,CAAE,YAAY,CAAE;aAC1B,EAAD,EAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+}
