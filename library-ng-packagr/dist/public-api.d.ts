@@ -1,2 +1,2 @@
 export * from './test.module';
-export * from './foo';
+export * from './foo/index';
